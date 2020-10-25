@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="325.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TUI">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" onAction="#showAbout" text="About">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Author " />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="355.0" prefWidth="603.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ListView fx:id="printHuman" layoutX="264.0" layoutY="10.0" prefHeight="267.0" prefWidth="327.0" />
+            <TextField fx:id="inputName" layoutX="29.0" layoutY="44.0" prefHeight="27.0" prefWidth="214.0" />
+            <TextField fx:id="inputEmail" layoutX="29.0" layoutY="117.0" prefHeight="27.0" prefWidth="214.0" />
+            <Button layoutX="69.0" layoutY="170.0" mnemonicParsing="false" onAction="#readHumanData" prefHeight="27.0" prefWidth="106.0" text="add" />
+            <Button layoutX="69.0" layoutY="250.0" mnemonicParsing="false" onAction="#editHumanData" prefHeight="27.0" prefWidth="106.0" text="edit" />
+            <Button layoutX="69.0" layoutY="211.0" mnemonicParsing="false" onAction="#deleteHuman" prefHeight="27.0" prefWidth="106.0" text="delete" />
+            <Label layoutX="102.0" layoutY="20.0" prefHeight="17.0" prefWidth="40.0" text="name :" />
+            <Label layoutX="102.0" layoutY="86.0" prefHeight="17.0" prefWidth="40.0" text="email :" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
